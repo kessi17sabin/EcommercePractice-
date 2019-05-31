@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -22,7 +23,8 @@
 
     <link rel="stylesheet" href="{{asset('/backend/plugins/simplemde/simplemde.min.css')}}">
 
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css">
+    <link rel="stylesheet"
+        href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/css/bootstrap-datetimepicker.min.css">
 
     <link rel="stylesheet" href="{{asset('/backend/plugins/jasny-bootstrap/css/jasny-bootstrap.css')}}">
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
@@ -33,40 +35,45 @@
 
     <![endif]-->
 </head>
+
 <body class="hold-transition skin-blue sidebar-mini">
-<div class="wrapper">
+    <div class="wrapper">
 
-   @include('layouts.backend.navbar')
+        @include('layouts.backend.navbar')
 
-    @include('layouts.backend.sidebar')
+        @include('layouts.backend.sidebar')
 
-    @yield('content')
-    <footer class="main-footer">
-        <div class="pull-right hidden-xs">
-            <b>Version</b> 2.3.6
-        </div>
-        <strong>Copyright &copy; 2014-2016 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All rights
-        reserved.
-    </footer>
+        @yield('content')
+        <footer class="main-footer">
+            <div class="pull-right hidden-xs">
+                <b>Version</b> 2.3.6
+            </div>
+            <strong>Copyright &copy; 2014-2016 <a href="http://almsaeedstudio.com">Almsaeed Studio</a>.</strong> All
+            rights
+            reserved.
+        </footer>
 
-</div>
-<!-- ./wrapper -->
+    </div>
+    <!-- ./wrapper -->
 
-<!-- jQuery 2.2.3 -->
-<script src="{{asset('backend/js/jquery-2.2.3.min.js')}}"></script>
-<!-- Bootstrap 3.3.6 -->
-<script src="{{asset('backend/js/bootstrap.min.js')}}"></script>
-<!-- AdminLTE App -->
-<script src="{{asset('backend/js/app.min.js')}}"></script>
+    <!-- jQuery 2.2.3 -->
+    <script src="{{asset('backend/js/jquery-2.2.3.min.js')}}"></script>
+    <!-- Bootstrap 3.3.6 -->
+    <script src="{{asset('backend/js/bootstrap.min.js')}}"></script>
+    <!-- AdminLTE App -->
+    <script src="{{asset('backend/js/app.min.js')}}"></script>
 
-<script src="{{asset('/backend/plugins/simplemde/simplemde.min.js')}}"></script>
+    <script src="{{asset('/backend/plugins/simplemde/simplemde.min.js')}}"></script>
 
-<script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.22.2/moment-with-locales.min.js"></script>
+    <script
+        src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-datetimepicker/4.17.47/js/bootstrap-datetimepicker.min.js">
+    </script>
 
-<script src="{{asset('/backend/plugins/jasny-bootstrap/js/jasny-bootstrap.js')}}"></script>
+    <script src="{{asset('/backend/plugins/jasny-bootstrap/js/jasny-bootstrap.js')}}"></script>
 
 
-@yield('script')
+    @yield('script')
 </body>
+
 </html>
